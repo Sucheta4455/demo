@@ -1,0 +1,52 @@
+19 Directories
+They hold crucial Configuration files data,users data and critical system data.
+
+commands are set of programs or codes
+1)/bin -- has executable files used by all users 
+2)/sbin -- has executable files used by only root user
+3)/var -- has data like logs,cache,temporary files
+          /var/logs html /var/spool/mail crondls 
+4)/home --home directory of local user
+5)/root --home directory of root user
+6)/opt --has optional software packages
+7)/etc --has all  configuration files such as packages,services.
+       /etc/sudoers
+       /etc/fstab
+       /etc/yum.repos.d/
+       /etc/httpd/http.conf
+       /etc/ssh/sshd_config
+       /etc/rsyslog
+       /etc/rsyslog.conf
+       /etc/logrotate.d/
+       /etc/logrotate.conf
+       /etc/rsys
+8)/lib32 - has libraries essential for binaries in /bin and /sbin
+         applications compiled for 32bit ,these lib32 are required to run 32 bit applications
+         on 64 bit applications.   
+         for eg -adobe photosho cs6 , autodesk autocad 2013,microsoft office 2010
+9)/lib64 - these lib 64 files stores 64 bit libraries, as these libraries are required 
+         for excecution of 64bit appilications 
+          for eg autodesk maya , microsoft office 365 ,adobe creative cloud
+
+10)/media temporary mount point for removable media like usb devices
+11)/mnt -temporary mount point for additional filesystems can mount partitions on /mnt as well
+12)/run -serves as temporary filesystem holding runtime information about system since last boot
+      once we run reboot the contents of run erases.
+13)/srv -data for services provided by system.
+14)/sys - contains info about devices drivers and kernel features
+15)/tmp - temporary files,usually cleared on rebootls 
+16)/usr(unix system resources) - contains user binaries,libraries,docs and source codes
+               acts as a repositiory for user related system files and programs
+17)/boot -contains all the neccesary files for boot process like linux kernel
+       6 stages of boot processls 
+       intial self test checkup
+       gpt mbr 
+       grub
+       systemd
+       initd 
+       RAM-ROM
+18)/dev - contains device files representing hardware devices   
+       /dev/sda
+       /dev/sdb -- sdb1 , sdb2
+19)/srv - data for services provided by the system
+                        
